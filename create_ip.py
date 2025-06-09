@@ -10,7 +10,7 @@ cfg_file = open("ip.cfg", 'r', encoding='utf-8')
 ip_cfg   = hjson.loads(cfg_file.read())
 
 # Создаем обязательные директории
-core_path = os.getcwd() + '/' + ip_cfg['name']
+core_path = os.getcwd() + '/../' + ip_cfg['name']
 
 if not os.path.exists(core_path): 
   os.mkdir(core_path)
