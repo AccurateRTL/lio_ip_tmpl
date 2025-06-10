@@ -71,7 +71,7 @@ if not os.path.exists(cur_path):
   makefile_file.write(makefile_tmpl.render(ip_cfg=ip_cfg))
 
 # Создаем Readme
-cur_path = core_path + '/Readme.md'
+cur_path = core_path + '/README.md'
 
 if not os.path.exists(cur_path):
   readme_file  = open(cur_path, 'w', encoding='utf-8')
